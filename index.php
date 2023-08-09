@@ -1,5 +1,12 @@
 <?php require "header.php" ?> 
 
+<div class="sky">
+    <?php include 'svg/sky_1.svg' ?>
+    <?php include 'svg/sky_2.svg' ?>
+    <?php include 'svg/sky_3.svg' ?>
+    <?php include 'svg/sky_4.svg' ?>
+</div>
+
 <h1 class="visibly-hidden">Acceuil</h1>
 
 <div class="container">
@@ -33,6 +40,7 @@
                 <?php include 'svg/etoile.svg' ?>
             </div>
             <div class="story__img story__img--A" id="medusa1">
+                <?php include 'svg/medusa.svg' ?>
             </div>
             <div class="story__text">
                 <h3>Médusa est l’une des trois gorgones. À l’instar de ces sœurs Sthéno et Euryale, est une belle jeune femme, mortelle à la magnifique chevelure.</h3>
@@ -47,6 +55,7 @@
                 <?php include 'svg/etoile.svg' ?>
             </div>
             <div class="story__img story__img--A" id="poseidon">
+                <?php include 'svg/poseidon.svg' ?>
             </div>
             <div class="story__text">
                 <h3>Sa beauté lui valut d’être courtisée par Poséidon le dieu marin, mais elle refusa ses avances. Cependant, Poséidon n’est guère un dieu qui abandonne celles sur qui il a jeté son dévolu. </h3>
@@ -196,21 +205,21 @@
             </div>
         </div>
         <div class="groupe"> 
-            <a href="" class="carre corners" >
+            <a href="stereotype_inconnu.php" class="carre corners" >
                 <h4>"Le viol a lieu dans une ruelle sombre et est commis par un inconnu."</h4>
                 <div class="etoile etoile--TL"><?php include 'svg/etoile.svg' ?></div>
                 <div class="etoile etoile--TR"><?php include 'svg/etoile.svg' ?></div>
                 <div class="etoile etoile--BL"><?php include 'svg/etoile.svg' ?></div>
                 <div class="etoile etoile--BR"><?php include 'svg/etoile.svg' ?></div>
             </a>
-            <a href="" class="carre corners" >
+            <a href="stereotype_vengence.php" class="carre corners" >
                 <h4>"Les femmes aiment se venger"</h4>
                 <div class="etoile etoile--TL"><?php include 'svg/etoile.svg' ?></div>
                 <div class="etoile etoile--TR"><?php include 'svg/etoile.svg' ?></div>
                 <div class="etoile etoile--BL"><?php include 'svg/etoile.svg' ?></div>
                 <div class="etoile etoile--BR"><?php include 'svg/etoile.svg' ?></div>
             </a>
-            <a href="" class=" carre corners" >
+            <a href="stereotype_rare.php" class=" carre corners" >
                 <h4>"Les viols arrivent rarement"</h4>
                 <div class="etoile etoile--TL"><?php include 'svg/etoile.svg' ?></div>
                 <div class="etoile etoile--TR"><?php include 'svg/etoile.svg' ?></div>

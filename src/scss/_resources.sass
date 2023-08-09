@@ -28,6 +28,7 @@
                 border-width: 0.8rem 0.8rem 0 0.8rem
                 border-color: white transparent transparent transparent
     &__list
+        background-color: rgb(255, 255, 255, 0.1)
         border: 0.0625rem solid white
         li
             
@@ -40,8 +41,9 @@
                 font-weight: 300
 
             &:hover
+                background-color: white
                 a
-                    text-decoration: underline
+                    color: $bg
 
         li::last-child
             border-bottom: none

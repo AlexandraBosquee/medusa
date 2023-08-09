@@ -33,7 +33,28 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="box box-flex box-flex--left">
+        <div class="col50">
+            <div class="illu">
+                <?php include 'svg/plainte.svg' ?>
+            </div>
+        </div>
+        <div class="col50">
+            <div class="explication"> 
+                <p> 
+                Le viol est bien plus répandu qu’on ne le pense, et il concerne les femmes de manière disproportionnée.
+                En Belgique, on recense plus de 9 dépôts de plainte par jour pour des faits de viol » (Police Fédérale – DGR/DRI/BIPOL)
+                </p>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+
 
 <div class="container--color">
     <div class="container">

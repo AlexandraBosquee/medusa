@@ -16,13 +16,18 @@ header
                 list-style: none
                 margin: 1rem 1rem
                 a
+                    background-color: #061830ec 
                     display: block
+                    width: fit-content
                     font-family: amiamie
                     text-decoration: none
                     font-weight: 500
                     font-size: clamp(1.2rem , 5vw , 2rem)
                     color: white
                     text-transform: uppercase
+                    margin-bottom:  2rem
+                    &:hover
+                        border-bottom: 0.0625rem solid white
     
     .burger 
         display: block
@@ -77,6 +82,7 @@ header.active
     header , header.active
         height: 5rem
         nav
+            background-color: transparent
             transform: translateX(0%)
             height: auto
             width: 100%
