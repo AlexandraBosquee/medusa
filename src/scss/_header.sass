@@ -1,0 +1,96 @@
+header
+    position: relative
+    height: 2rem
+    nav
+        position: absolute
+        background-color: $bg
+        transform: translateY(-100%)
+        transition: transform 0.3s ease-in-out
+        z-index: 10
+        height: 100vh
+        width: 100vw
+        ul
+            margin-top: 5rem
+
+            li
+                list-style: none
+                margin: 1rem 1rem
+                a
+                    display: block
+                    font-family: amiamie
+                    text-decoration: none
+                    font-weight: 500
+                    font-size: clamp(1.2rem , 5vw , 2rem)
+                    color: white
+                    text-transform: uppercase
+    
+    .burger 
+        display: block
+        position: absolute
+        top: 2rem
+        right: 2rem
+        width: 2rem
+        height: 1.5rem
+        cursor: pointer
+        z-index: 20
+        span 
+            width: 100%
+            height: 4px
+            background-color: white
+            border-radius: 12px
+            display: block
+            transition: background-color 0.5s ease-in-out
+            &::before,
+            &::after 
+                content: ""
+                width: 100%
+                background-color: white
+                display: block
+                transition: all 0.5s ease-in-out
+                border-radius: 12px
+                height: 4px
+            &::before 
+                transform: translateY(-10px)
+
+            &::after 
+                transform: translateY(10px)
+                margin-top: -4px
+header.active
+    nav
+        transform: translateY(0%)
+
+    .burger
+        span 
+            background-color: transparent
+
+
+        span::before 
+            transform: rotateZ(45deg) translateY(0)
+
+
+        span::after 
+            transform: rotateZ(-45deg) translateY(0)
+
+
+
+@media (min-width: $tablet)
+    header , header.active
+        height: 5rem
+        nav
+            transform: translateX(0%)
+            height: auto
+            width: 100%
+            text-align: right
+            ul
+                display: inline-block
+                width: 100%
+                margin-top: 2rem
+                li
+                    display: inline-block
+                    margin: 1rem 1rem
+                    a
+                        text-align: right
+                        font-size: 1.1rem
+                        text-transform: uppercase
+        .burger 
+            display: none

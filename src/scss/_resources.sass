@@ -1,0 +1,58 @@
+.documentation
+    max-width: 100%
+    display: inline-block
+    button
+        width: 100% 
+        background-color: $bg
+        border: 0.0625rem solid white
+        padding: 0.5rem 2rem
+        text-align: left
+        &:hover
+            background-color: white
+            h3
+                color: $bg
+                &::after
+                    border-color: $bg transparent transparent transparent
+        h3
+            position: relative
+            padding-right:  2rem
+            &::after
+                content: ''
+                position: absolute
+                right: -1.5rem
+                top: 50%
+                transform: translate(-50% , -50%)
+                width: 0px
+                height: 0px
+                border-style: solid
+                border-width: 0.8rem 0.8rem 0 0.8rem
+                border-color: white transparent transparent transparent
+    &__list
+        border: 0.0625rem solid white
+        li
+            
+            border-bottom: 0.0625rem solid white
+            list-style: none
+            padding:  1rem 2rem
+            a
+                font-family: amiamie
+                text-decoration: none
+                font-weight: 300
+
+            &:hover
+                a
+                    text-decoration: underline
+
+        li::last-child
+            border-bottom: none
+
+.none
+    display: none
+
+.block
+    display: block
+        
+
+@media (min-width: $tablet)
+    .documentation
+        width: calc( $midlet + 4rem )

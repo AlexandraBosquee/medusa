@@ -1,0 +1,52 @@
+.stereotype
+    margin-top: 5rem
+    display: inline-block
+    text-align: center
+    width: 100%
+    font-family: homoneta
+    &__rectangle
+        padding: 1rem 2rem
+        border: 0.0625rem solid white
+        position: relative
+        margin: 0 2rem
+    &__titre
+        width: fit-content
+        display: inline-block
+        h1
+            font-size: clamp(1rem, 7vw, 3rem)
+            position: relative
+            z-index: 2
+        &::after, &::before
+            position: absolute
+            content: "\0027 \0027"
+            font-family: homoneta
+            font-size: clamp(4rem, 8vw, 5rem)
+            background-color: $bg
+            height: 3rem
+            width: clamp(4rem, 8vw, 5rem)
+            z-index: 1
+        &::after
+            top: -1.2rem
+            left: clamp(-2rem, 8vw, -2.8rem)
+        &::before 
+            bottom: -1.2rem
+            right: clamp(-2rem, 8vw, -2.8rem)
+
+    &__soustitre
+        h2
+            font-size: clamp(0.8rem, 5vw, 1.4rem)
+        &::after , &::before 
+            position: absolute
+            content: "\0027 \0027"
+            font-family: homoneta
+            font-size: clamp(3rem, 8vw, 4rem)
+            background-color: $bg
+            height: 2rem
+            width: clamp(3rem, 8vw, 4rem)
+            z-index: 1
+        &::after  
+            top: -1rem
+            left: clamp(-1.5rem, 8vw, -2rem)
+        &::before 
+            bottom: -1rem
+            right: clamp(-1.5rem, 8vw, -2rem)

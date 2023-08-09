@@ -1,0 +1,200 @@
+.block__acceuil , .block__ressources
+    position: relative
+    text-align: center
+    margin: 0 2rem
+    p , li
+        font-size: clamp(0.8rem , 4vw , 1.2rem)
+    li
+        text-align: left
+        
+
+
+.block__acceuil
+    h2
+        font-family: homoneta
+        font-size: clamp(1.5rem , 7vw , 3rem) 
+        margin: 5rem 0 2rem 0
+    li
+        padding-bottom: 1rem
+
+.block__ressources
+    h1
+        font-family: homoneta
+        font-size: clamp(1.5rem , 5vw , 3rem) 
+        margin: 5rem 0 2rem 0
+    
+    h2
+        font-family: homoneta
+        font-size: clamp(1rem , 5vw , 2rem) 
+        margin: 2rem 0
+
+
+.rectangle--central
+    max-width: 100%
+    display: inline-block
+
+        
+.story
+    margin: 0
+    li
+        display: flex
+        flex-direction: column
+        align-items: left
+        position: relative
+        margin-left: 2rem
+        padding: 3rem 0 
+    &__etoile , &__ligne
+        position: absolute
+        left: 0rem
+    &__ligne 
+        height: 100%
+        display: block
+        top: 0
+        svg
+            display: block
+            height: 100%
+    .connecteur--T , .connecteur--B
+        height: 5rem
+        &::after
+            position: absolute
+            top: 0
+            content: ""
+
+    &__etoile
+        transform: translate(-48%)
+        top: 50%
+    &__img
+        border: 0.0625rem solid white
+        max-width: 100%
+        height: auto
+        margin: 2rem
+        padding: 1rem
+        aspect-ratio: 1 / 1
+        svg
+            display: block
+            width: 100%
+            height: auto
+            margin: auto
+            
+        &--B
+            svg
+                width: 85%
+                height: auto
+        &--athena
+            svg
+                width: 65%
+                height: auto
+                
+    &__text
+        max-width: 75%
+        margin: 0 2rem
+        display: block
+        
+        h3
+            font-family: homoneta
+            font-size: clamp(1rem , 4vw , 1.5rem)
+
+.groupe
+    margin-top: 3rem 
+    display: flex
+    flex-direction: column
+    align-items: center
+    .carre
+        text-decoration: none
+        aspect-ratio: 1 / 1
+        width: 50%
+        margin-bottom: 3rem
+        text-align: center
+        display: flex
+        align-items: center
+        &:hover
+            h4
+                font-weight: 800
+        h4
+            font-family: amiamie
+            font-weight: 500
+            text-transform: uppercase
+            font-size: clamp(1rem , 4vw , 1.5rem)
+
+
+.bottom
+    height: 5rem
+
+
+
+@media (min-width: $midlet)
+    .story
+        &__img
+            width: 70%
+    .groupe
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        .carre
+            width: calc( 33% - 3rem )
+            margin: 0 1.5rem 3rem 1.5rem
+            h4
+                font-size: clamp(1rem , 2.5vw , 1.3rem)
+
+@media (min-width: $tablet)
+    .rectangle--central
+        max-width: $midlet      
+    .story
+        li
+            margin-left: 0
+            align-items: center
+            justify-content: space-between
+        .right
+            flex-direction: row
+        .left
+            flex-direction: row-reverse
+        &__etoile , &__ligne
+            left: 50%
+        .connecteur--T
+            &::after
+                position: absolute
+                top: 0
+                transform: translate(5%,-50%)
+                content: ""
+                height: 0.625rem
+                width: 0.625rem
+                background-color: #fff
+                border-radius: 50%
+        .connecteur--B
+            &::before
+                position: absolute
+                bottom: 0
+                transform: translate(5%, 50%)
+                content: ""
+                height: 0.625rem
+                width: 0.625rem
+                background-color: #fff
+                border-radius: 50%
+
+        &__img
+            border: 0.0625rem solid white
+            width: 38%
+            height: auto
+            margin: 2rem
+            display: block
+            svg
+                display: block
+                width: auto
+                height: 100%
+            &--A
+                svg
+                    width: auto
+                    height: 85%
+        &__text
+            max-width: 42%
+    .groupe
+        flex-wrap: nowrap
+        .carre
+            h4
+                font-size: clamp(0.8rem , 1.8vw , 1.8rem)
+
+
+
+            
