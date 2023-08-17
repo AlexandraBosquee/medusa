@@ -115,3 +115,5 @@
 </div>
 
 <?php include 'indicateur.php' ?>
+
+<?php require 'footer.php' ?> 

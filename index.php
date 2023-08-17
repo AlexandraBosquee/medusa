@@ -249,4 +249,4 @@ require "header.php" ?>
 
 </div>
 
-<?php include 'footer.php' ?> 
+<?php require 'footer.php' ?> 
