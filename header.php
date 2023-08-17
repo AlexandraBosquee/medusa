@@ -18,7 +18,7 @@
             <nav>
                 <ul>
                     <li <?php if($page == "index") {echo 'class="current"';} ?>><a href="index.php">Acceuil</a></li>
-                    <li <?php if(str_contains($page ,'stereotype')) {echo 'class="current"';} ?>><a href="stereotype.php">Les stéréotypes toxiques</a></li>
+                    <li <?php if(strpos($page ,'stereotype') !== false) {echo 'class="current"';} ?>><a href="stereotype.php">Les stéréotypes toxiques</a></li>
                     <li <?php if($page == "ressources") {echo 'class="current"';} ?>><a href="ressources.php">Ressources</a></li>
                 </ul>
             </nav>

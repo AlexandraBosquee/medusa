@@ -1,4 +1,9 @@
-<?php require "header.php" ?> 
+
+<?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+require "header.php" ?> 
 
 <div class="sky">
     <?php include 'svg/sky_1.svg' ?>
