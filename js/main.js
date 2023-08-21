@@ -17,17 +17,70 @@ burger.addEventListener('click', () => {
   header.classList.toggle('active');
 });
 
-document.addEventListener( 'DOMContentLoaded', function() {
 
-  var splide = new Splide( '.splide', {
-    type   : 'loop',
-    padding: 'auto',
-    focus: 'center',
-    speed: 0,
-    clones: 1,
-  } );
+
+gsap.registerPlugin(ScrollTrigger);
+
+const locomotiveScroll = new LocomotiveScroll();
+
+let right = document.querySelectorAll(".right")
+
+right.forEach( (element) => {
+	let imgR = element.querySelector(".story__img");
+	let texteR = element.querySelector(".story__text") ;
+
+ gsap.
+  timeline({
+    scrollTrigger: {
+      trigger: element,
+      start: "top center",
+      end: "center center",
+      scrub: true,
+      markers: true,
+      onEnter: () => element.querySelector('.ani').classList.add('start')
+    }
+  })
+  .from( imgR , {
+    opacity: 0,
+    x : -50,
+  })
+  .from( texteR , {
+    opacity: 0,
+    x : 50,
+  })
   
-  splide.mount();
-} );
+});
+
+
+let left = document.querySelectorAll(".left")
+
+left.forEach( (element) => {
+	let imgL = element.querySelector(".story__img");
+	let texteL = element.querySelector(".story__text") ;
+
+ gsap.
+  timeline({
+    scrollTrigger: {
+      trigger: element,
+      start: "top center",
+      end: "center center",
+      scrub: true,
+      markers: true,
+      // onEnter: () => element.querySelector('.story_img').classList.add('active')
+    }
+  })
+  .from( imgL , {
+    opacity: 0,
+    x : 50,
+  })
+  .from( texteL , {
+    opacity: 0,
+    x : -50,
+  })
+  
+});
+
+
+
 
 
