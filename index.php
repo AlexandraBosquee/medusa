@@ -16,7 +16,7 @@ require "header.php" ?>
 
 <div class="container">
     <div class="block__acceuil">
-        <h2>Qui est le vrai monstre ?</h2>
+        <h2 data-scroll data-scroll-speed="0.1">Qui est le vrai monstre ?</h2>
         <div class="connecteur">
             <div class="connecteur__ligne">
                 <?php include 'svg/ligne.svg' ?>
@@ -31,21 +31,22 @@ require "header.php" ?>
         </div>
     </div>
 
-    <ul class="story">
+    <ul  class="story">
         <li class="connecteur--T">
             <div class="story__ligne">
                 <?php include 'svg/ligne.svg' ?>
             </div>
         </li>
-        <li class="right">
+        <li class="right" id="medusa1">
             <div class="story__ligne">
                 <?php include 'svg/ligne.svg' ?>
             </div>
             <div class="story__etoile">
                 <?php include 'svg/etoile.svg' ?>
             </div>
-            <div class="story__img story__img--A" id="medusa1">
-                <?php include 'svg/medusa.svg' ?>
+            <div class="story__img story__img--A" >
+                <?php include 'svg/medusa_point.svg' ?>
+                <?php include 'svg/medusa_animated.svg' ?>
             </div>
             <div class="story__text">
                 <h3>Médusa est l’une des trois gorgones. À l’instar de ces sœurs Sthéno et Euryale, est une belle jeune femme, mortelle à la magnifique chevelure.</h3>
@@ -134,7 +135,7 @@ require "header.php" ?>
     </ul>
 
     <div class="block__acceuil">
-        <h2>Pourquoi je vous raconte cette histoire?</h2>
+        <h2 data-scroll data-scroll-speed="0.1">Pourquoi je vous raconte cette histoire?</h2>
         <div class="connecteur">
             <div class="connecteur__ligne">
                 <?php include 'svg/ligne.svg' ?>
@@ -155,7 +156,7 @@ require "header.php" ?>
     </div>
 
     <div class="block__acceuil">
-        <h2>Qu'est-ce que la culture du viol ?</h2>
+        <h2 data-scroll data-scroll-speed="0.1">Qu'est-ce que la culture du viol ?</h2>
         <div class="connecteur">
             <div class="connecteur__ligne">
                 <?php include 'svg/ligne.svg' ?>
@@ -176,7 +177,7 @@ require "header.php" ?>
     </div>
 
     <div class="block__acceuil">
-        <h2>Quel est notre mission?</h2>
+        <h2 data-scroll data-scroll-speed="0.1" >Quel est notre mission?</h2>
         <div class="connecteur">
             <div class="connecteur__ligne">
                 <?php include 'svg/ligne.svg' ?>
@@ -203,7 +204,7 @@ require "header.php" ?>
     </div>
 
     <div class="block__acceuil">
-        <h2>Quel sont ses stéréotype?</h2>
+        <h2 data-scroll data-scroll-speed="0.1" >Quel sont ses stéréotype?</h2>
         <div class="connecteur">
             <div class="connecteur__ligne">
                 <?php include 'svg/ligne.svg' ?>
