@@ -246,6 +246,11 @@ require "header.php" ?>
             </div>
         </div>
     </div>
+    <video width="1200" height="auto" controls >
+        <source src="video1.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la lecture de vidéos.
+    </video>
+
     <div class="bottom"></div>
 
 </div>
