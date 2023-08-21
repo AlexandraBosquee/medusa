@@ -18,7 +18,6 @@ burger.addEventListener('click', () => {
 });
 
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 const locomotiveScroll = new LocomotiveScroll();
