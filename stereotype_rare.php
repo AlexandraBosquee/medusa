@@ -36,13 +36,12 @@
 
 
 
-    <div class="box box-flex box-flex--left">
-        <div class="col50">
+    <div class=" box--central ">
+        <div class="rectangle--central">
             <div class="illu">
                 <?php include 'svg/plainte.svg' ?>
             </div>
-        </div>
-        <div class="col50">
+        
             <div class="explication"> 
                 <p> 
                 Le viol est bien plus répandu qu’on ne le pense, et il concerne les femmes de manière disproportionnée.
@@ -51,6 +50,7 @@
             </div>
         </div>
     </div>
+
 
 </div>
 

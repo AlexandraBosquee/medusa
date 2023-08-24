@@ -166,7 +166,8 @@ h1 , h2 , h3
 	
 .connecteur
 	position: relative
-	height: 5rem
+	z-index: 10
+	height: 3rem
 	text-align: center
 	&::after
 		position: absolute
@@ -242,12 +243,18 @@ h1 , h2 , h3
 		height: auto
 		width: 100%
 
+
 .box
 	margin: 5rem 2rem
 .box2
 	margin: 2rem 2rem 5rem 2rem
 .box3 
 	margin: 8rem 2rem
+
+.box--central
+	width: 100%
+	text-align: center
+	margin: 5rem auto
 
 .container--color
 	background-color: $blue
@@ -262,6 +269,8 @@ video
 
 
 @media (min-width: $midlet)
+	.connecteur
+		height: 5rem
 	.btn
 		width: 50%
 

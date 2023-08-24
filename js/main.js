@@ -17,10 +17,25 @@ burger.addEventListener('click', () => {
   header.classList.toggle('active');
 });
 
+// ----------------------------- Anim acceuil
 
 gsap.registerPlugin(ScrollTrigger);
 
-const locomotiveScroll = new LocomotiveScroll();
+const locomotiveScroll = new LocomotiveScroll({
+  lenisOptions: {
+      wrapper: window,
+      lerp: 0.1,
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      smoothTouch: false,
+      wheelMultiplier: 1,
+      touchMultiplier: 1,
+      normalizeWheel: true,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      
+  },
+});
 
 let right = document.querySelectorAll(".right")
 
@@ -34,7 +49,7 @@ right.forEach( (element) => {
       trigger: element,
       start: "top center",
       end: "center center",
-      scrub: true,
+      scrub: false,
       markers: true,
       onEnter: () => element.querySelector('.ani').classList.add('start')
     }
@@ -63,7 +78,7 @@ left.forEach( (element) => {
       trigger: element,
       start: "top center",
       end: "center center",
-      scrub: true,
+      scrub: false,
       markers: true,
       onEnter: () => element.querySelector('.ani').classList.add('start')
     }

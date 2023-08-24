@@ -17,7 +17,7 @@
         display: flex
         justify-content: center
         align-items: center
-        height: 15rem
+        height: 10rem
         a
             margin: auto
             font-family: amiamie
@@ -26,7 +26,7 @@
             text-transform: uppercase
             text-decoration: none
         &.is-active
-            height: 20rem
+            height: 15rem
             a
                 font-size: clamp(1.2rem, 4vw , 3rem)
             &:hover
@@ -44,9 +44,9 @@
             height: 2rem
             width: 2rem
     &__pagination
-        bottom: -15rem
+        bottom: -5rem
         li
-            padding: 5rem 2rem
+            padding: 0rem 2rem
             position: relative
             &::after , &::before
                 z-index: 0
@@ -92,6 +92,12 @@
     .splide
         &__track
             padding: 0 5rem 
+        &__slide
+            height: 15rem
+            &.is-active
+                height: 20rem
+        &__pagination
+            bottom: -8rem
 
 @media (min-width: $tablet)
     .splide
