@@ -61,7 +61,8 @@ require "header.php" ?>
                 <?php include 'svg/etoile.svg' ?>
             </div>
             <div class="story__img story__img--A" id="poseidon">
-                <?php include 'svg/poseidon.svg' ?>
+                <?php include 'svg/poseidon_point.svg' ?>
+                <?php include 'svg/poseidon_animated.svg' ?>
             </div>
             <div class="story__text">
                 <h3>Sa beauté lui valut d’être courtisée par Poséidon le dieu marin, mais elle refusa ses avances. Cependant, Poséidon n’est guère un dieu qui abandonne celles sur qui il a jeté son dévolu. </h3>
@@ -75,8 +76,9 @@ require "header.php" ?>
             <div class="story__etoile">
                 <?php include 'svg/etoile.svg' ?>
             </div>
-            <div class="story__img">
-                <?php include 'svg/temple.svg' ?>
+            <div class="story__img story__img--B">
+                <?php include 'svg/temple_point.svg' ?>
+                <?php include 'svg/temple_animated.svg' ?>
             </div>
             <div class="story__text">
                 <h3>Sous la forme d’un oiseau, il la poursuit et Méduse n’eut d’autre choix que de fuir jusqu’où elle le pouvait. Sa course l’amena jusque dans un temple d’Athéna où elle trouva refuge. </h3>
@@ -91,7 +93,8 @@ require "header.php" ?>
                 <?php include 'svg/etoile.svg' ?>
             </div>
             <div class="story__img">
-                <?php include 'svg/attaque.svg' ?>
+                <?php include 'svg/viol_point.svg' ?>
+                <?php include 'svg/viol_animated.svg' ?>
             </div>
             <div class="story__text">
                 <h3>Elle se pensait alors en sécurité, mais cela n’arrête pas Poséidon qui entre dans le temple et la viole.</h3>
@@ -105,8 +108,9 @@ require "header.php" ?>
             <div class="story__etoile">
                 <?php include 'svg/etoile.svg' ?>
             </div>
-            <div class="story__img story__img--athena">
-                <?php include 'svg/athena.svg' ?>
+            <div class="story__img story__img--B">
+                <?php include 'svg/athena_point.svg' ?>
+                <?php include 'svg/athena_animated.svg' ?>
             </div>
             <div class="story__text">
                 <h3>Athéna devint furieuse devant cette insulte qui lui avait été faite. Sa colère aurait pu se tourner vers Poséidon, mais ce fut Méduse qui en fit les frais.</h3>
@@ -121,7 +125,8 @@ require "header.php" ?>
                 <?php include 'svg/etoile.svg' ?>
             </div>
             <div class="story__img story__img--B">
-                <?php include 'svg/medusa2.svg' ?>
+                <?php include 'svg/monstre_point.svg' ?>
+                <?php include 'svg/monstre_animated.svg' ?>
             </div>
             <div class="story__text">
                 <h3>Athéna la transforma en monstre comme ses sœurs, ajoutant que tous ceux qui croisent son regard seraient pétrifiés. Ainsi on la surnomma également Gorgone par son apparence et ses origines.</h3>
@@ -133,6 +138,8 @@ require "header.php" ?>
             </div>
         </li>
     </ul>
+
+    <!-- story telling fini ---------------------------------------------- -->
 
     <div class="block__acceuil">
         <h2 data-scroll data-scroll-speed="0.1">Pourquoi je vous raconte cette histoire?</h2>
@@ -156,7 +163,7 @@ require "header.php" ?>
     </div>
 
     <div class="block__acceuil">
-        <h2 data-scroll data-scroll-speed="0.1">Qu'est-ce que la culture du viol ?</h2>
+        <h2 data-scroll data-scroll-speed="0.1">Qu'est-ce que la culture du viol?</h2>
         <div class="connecteur">
             <div class="connecteur__ligne">
                 <?php include 'svg/ligne.svg' ?>
@@ -203,6 +210,10 @@ require "header.php" ?>
         </div>
     </div>
 
+
+    <!-- stereotype  ---------------------------------------------- -->
+
+
     <div class="block__acceuil">
         <h2 data-scroll data-scroll-speed="0.1" >Quel sont ses stéréotype?</h2>
         <div class="connecteur">
@@ -240,16 +251,21 @@ require "header.php" ?>
             </a>
         </div>
 
+        <!-- video  ---------------------------------------------- -->
+
         <div class="connecteur">
             <div class="connecteur__ligne">
                 <?php include 'svg/ligne.svg' ?>
             </div>
         </div>
     </div>
-    <video width="1200" height="auto" controls >
-        <source src="video1.mp4" type="video/mp4">
-        Votre navigateur ne prend pas en charge la lecture de vidéos.
-    </video>
+    <div class="block_acceuil block_video">
+        <video width="100%" height="auto" controls >
+            <source src="video1.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la lecture de vidéos.
+        </video>
+    </div>
+
 
     <div class="bottom"></div>
 

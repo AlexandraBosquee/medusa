@@ -65,7 +65,7 @@ left.forEach( (element) => {
       end: "center center",
       scrub: true,
       markers: true,
-      // onEnter: () => element.querySelector('.story_img').classList.add('active')
+      onEnter: () => element.querySelector('.ani').classList.add('start')
     }
   })
   .from( imgL , {
